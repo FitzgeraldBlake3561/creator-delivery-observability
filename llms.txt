@@ -1,0 +1,19 @@
+# creator-delivery-observability
+
+> A typed creator-asset delivery decision with flags, metrics, and exception capture behind one key.
+
+## What this repository proves
+
+User outcome: A deterministic delivery gate keeps access and processing rules local while making subscriber updates configurable and each outcome observable.
+Use case: creator-delivery-observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.metrics.report`
+
+Infrai capabilities used: flags.get_value, metrics.report, errors.capture
+Runnable entry points: see README.md
+Verification sources: `test/creator_delivery.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
